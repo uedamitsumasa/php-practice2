@@ -7,8 +7,8 @@ echo "私の名前は「" . $name . "」です。";
 
 <!-- Q2 四則演算 -->
 <?php
-$num = (5 * 4);
-echo $num . "<br>";
+$num = 5 * 4;
+echo $num . "/n";
 echo $num / 2;
 ?>
 
@@ -24,11 +24,13 @@ echo "現在時刻は、" . $current_time . "です。";
 <?php
 $device = "mac";
 
-if ($device == "windows") {
+if ($device === "windows") {
     echo "使用OSは、windowsです。";
-} else if ($device == "mac") {
+}
+if ($device === "mac") {
     echo "使用OSは、macです。";
-} else {
+}
+if ($device != "windows" && $device != "mac") {
     echo "どちらでもありません。";
 }
 ?>
@@ -62,7 +64,7 @@ $kanto_capitals = array(
 );
 
 foreach ($kanto_capitals as $capital) {
-    echo $capital . "<br>";
+    echo $capital . "/n";
 }
 ?>
 

@@ -136,7 +136,7 @@ class Student
 
 $student = new Student(120, '山田');
 
-$student->displayInfo();
+echo "学籍番号{$student->studentId}番の生徒は{$student->studentName}です。";
 
 ?>
 
