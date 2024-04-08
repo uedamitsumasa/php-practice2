@@ -22,17 +22,15 @@ echo "現在時刻は、" . $current_time . "です。";
 
 <!-- Q4 条件分岐-1 if文 -->
 <?php
-$device = "mac";
+$device = "リナックス";
 
-if ($device === "windows") {
-    echo "使用OSは、windowsです。";
+if ($device === 'Windows' || $device === 'Mac') {
+    echo "使用OSは $device です。";;
 }
-if ($device === "mac") {
-    echo "使用OSは、macです。";
+else {
+    echo "どちらでもありません。";;
 }
-if ($device != "windows" && $device != "mac") {
-    echo "どちらでもありません。";
-}
+
 ?>
 
 
@@ -153,7 +151,6 @@ function distinguishNum($num) {
     }
 }
 
-// 関数を実行して結果を表示
 echo distinguishNum(11) . PHP_EOL;
 echo distinguishNum(24) . PHP_EOL;
 
